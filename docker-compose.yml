@@ -15,7 +15,6 @@ services:
     labels:
       # traefik V2
       - traefik.http.routers.wp.rule=Host(`${SITE_URL}`)
-      # - traefik.http.routers.wp.rule=Host:${SITE_URL}
 
       # traefik V1
       # - traefik.backend=wp
@@ -24,7 +23,7 @@ services:
       # - traefik.port=80
     depends_on:
       - mysql
-
+  
   mysql:
     image: mysql:5.7
     container_name: mysql
