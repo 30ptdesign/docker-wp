@@ -3,5 +3,11 @@
 A simple Wordpress / MySQL setup.
 
 ## Usage
-- `cp .env.example .env`
-- `docker-compose up -d`
+### Add .env
+```bash
+cp .env.example .env
+```
+### Build / start containers
+```bash
+docker-compose up -d
+```
